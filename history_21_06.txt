@@ -1,0 +1,25 @@
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+18 package(s) needed for security, out of 25 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-33-20 ~]$ cd /opt/090523_morning/Tetiana/
+[ec2-user@ip-172-31-33-20 Tetiana]$ nano myfirstbashscript.sh
+You have new mail in /var/spool/mail/ec2-user
+[ec2-user@ip-172-31-33-20 Tetiana]$ chmod u+x myfirstbashscript.sh
+[ec2-user@ip-172-31-33-20 Tetiana]$ ls -l
+total 8
+-rwxrw-r-- 1 ec2-user ec2-user  53 Jun 25 17:35 myfirstbashscript.sh
+-rwxrw-r-- 1 ec2-user ec2-user 261 Jun 25 17:05 script.sh
+drwxrwxr-x 2 ec2-user ec2-user  22 Jun 23 12:24 test
+[ec2-user@ip-172-31-33-20 Tetiana]$ ./myfirstbashscript.sh
+Sun Jun 25 17:37:01 UTC 2023
+Hello Tetiana!
+/opt/090523_morning/Tetiana
+You have mail in /var/spool/mail/ec2-user
+[ec2-user@ip-172-31-33-20 Tetiana]$ export_file
+-bash: export_file: command not found
+[ec2-user@ip-172-31-33-20 Tetiana]$

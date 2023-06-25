@@ -1,0 +1,35 @@
+user@ThinkPodT430 MINGW64 ~
+$ ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+Last login: Sun Jun 25 19:47:10 2023 from ip-176-199-211-043.um44.pools.vodafone-ip.de
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+18 package(s) needed for security, out of 25 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-33-20 ~]$ cd /opt/090523_morning/Tetiana/
+[ec2-user@ip-172-31-33-20 Tetiana]$ nano script4.sh
+You have new mail in /var/spool/mail/ec2-user
+[ec2-user@ip-172-31-33-20 Tetiana]$ ./script4.sh
+You have mail in /var/spool/mail/ec2-user
+[ec2-user@ip-172-31-33-20 Tetiana]$ cat text4.txt
+Script started on the 06/25/23 at 20:07
+     55     488    3948
+Stop at 20:07
+[ec2-user@ip-172-31-33-20 Tetiana]$
+____________________________________________________________
+
+#!/bin/bash
+
+> /opt/090523_morning/Tetiana/text4.txt
+DATE=`date "+%D"`
+TIME=`date "+%H:%M"`
+echo "Script started on the" $DATE "at" $TIME >> /opt/090523_morning/Tetiana/text4.txt
+cd /var/log/
+ls -al /var/log | wc >> /opt/090523_morning/Tetiana/text4.txt
+echo "Stop at" $TIME >> /opt/090523_morning/Tetiana/text4.txt
+
+
+

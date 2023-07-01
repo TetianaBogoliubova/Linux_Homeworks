@@ -1,0 +1,17 @@
+#!/bin/bash
+ 
+for run in {1..10}
+do
+date "+%H:%M:%S"
+ps -ef | wc -l
+#sleep 5s
+done
+touch /root/processor_file.txt
+cat /proc/cpuinfo > processor_file.txt
+cat /etc/os-release | head -1 >> processor_file.txt
+cat /etc/os-release | head -1 | grep -o Alpine >> processor_file.txt
+ 
+for run in {50..100}
+do
+touch ${run}.txt
+done

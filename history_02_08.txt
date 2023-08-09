@@ -1,0 +1,12 @@
+#!/bin/bash
+
+date_number=$(date +"%d.%m.%y")
+for run in {1..10}
+do
+date '+%H%M%S' >> /opt/090523_morning/Tetiana/$run$date_number.txt
+done
+
+
+
+
+#*/15 * * * * /opt/090523_morning/Tetiana/srcipt5.sh >> /opt/090523_morning/Tetiana/output.log
